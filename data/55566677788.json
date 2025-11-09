@@ -1,0 +1,22 @@
+{
+  "nome_devedor": "Ana Paula Rodrigues Lima",
+  "cpf": "555.666.777-88",
+  "endereco": "Alameda dos Anjos, 3210, Bloco B, Apto 802",
+  "cidade": "Porto Alegre",
+  "uf": "RS",
+  "cep": "90420-130",
+  "email": "ana.lima@email.com.br",
+  "numero_contrato": "CTR-2023-445566",
+  "data_emissao": "2023-05-08",
+  "valor_operacao": 52000.00,
+  "quantidade_parcelas": 42,
+  "data_primeira_parcela": "2023-06-08",
+  "data_ultima_parcela": "2026-11-08",
+  "descricao_garantia": "Veículo Hyundai HB20 1.6 Comfort Plus 2022/2022",
+  "renavam": "65432187901",
+  "placa": "MNO-4P56",
+  "notificacao_valida": true,
+  "valor_em_aberto_mora": 8920.15,
+  "valor_total_operacoes_em_aberto_mora": 8920.15,
+  "valor_devido_atualizado_vencimento_antecipado": 39560.50
+}
