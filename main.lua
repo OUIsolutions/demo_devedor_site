@@ -6,11 +6,16 @@ local function api_handler(request)
     if request.route == "/api/obtem_devedor_por_cpf" then
 
         local devedor = request.params["devedor"]
-        if not devedor then 
+        if not devedor then
             return  serjao.send_text("'devedor' não passado nos parâmetros", 400)
         end
         local filename = "data/" .. devedor .. ".json"
-        return serjao.send_file(filename, "application/json")
+        -- Verifica se o arquivo existe
+        if dtw.isfile(filename) then
+            return serjao.send_file(filename, "application/json")
+        else
+            return serjao.send_text("Devedor não encontrado", 404)
+        end
    end 
    if request.route == "/api/listar_devedores" then
         local files = dtw.list_files("data",true)
