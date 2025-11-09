@@ -1,22 +1,150 @@
+# Sistema de Consulta de Devedores
 
+Sistema web de demonstração para consulta de informações de devedores pessoa física (CPF) e jurídica (CNPJ), desenvolvido com [VibeScript](https://github.com/OUIsolutions/VibeScript).
 
-requisitos:
-[vibescript](https://github.com/OUIsolutions/VibeScript) (runtime lua para execução do script)
+## Funcionalidades
 
-se estiver no linux instale com:
-```bash
+- Busca de devedores por CPF ou CNPJ
+- Listagem completa de todos os devedores cadastrados
+- Interface web responsiva e moderna
+- API RESTful para integração
+- Visualização detalhada de:
+  - Dados pessoais/empresariais
+  - Informações contratuais
+  - Valores em aberto e em mora
+  - Garantias (veículos com RENAVAM e placa)
+  - Status de notificações
 
-curl -L https://github.com/OUIsolutions/VibeScript/releases/download/0.45.1/vibescript.out -o vibescript.out && chmod +x vibescript.out && sudo mv vibescript.out /usr/local/bin/vibescript
+## Estrutura do Projeto
+
 ```
-se estiver no mac: 
+demo_devedor_site/
+├── main.lua          # Servidor API e lógica de negócio
+├── index.html        # Interface web do sistema
+├── data/             # Arquivos JSON com dados dos devedores
+│   ├── {cpf}.json
+│   └── {cnpj}.json
+└── README.md
+```
+
+## Requisitos
+
+Este projeto requer o [VibeScript](https://github.com/OUIsolutions/VibeScript), um runtime Lua otimizado para desenvolvimento web.
+
+### Instalação do VibeScript
+
+#### Linux
 
 ```bash
-curl -L https://github.com/OUIsolutions/VibeScript/releases/download/0.45.1/amalgamation.c -o vibescript.c && gcc vibescript.c -o vibescript && sudo mv vibescript /usr/local/bin/vibescript && rm vibescript.c
+curl -L https://github.com/OUIsolutions/VibeScript/releases/download/0.45.1/vibescript.out -o vibescript.out && \
+chmod +x vibescript.out && \
+sudo mv vibescript.out /usr/local/bin/vibescript
 ```
-demais plataformas (windows/deb/rpm):
-vá até a página de [releases](https://github.com/OUIsolutions/VibeScript/releases/download)
 
-para executar: 
+#### macOS
+
+```bash
+curl -L https://github.com/OUIsolutions/VibeScript/releases/download/0.45.1/amalgamation.c -o vibescript.c && \
+gcc vibescript.c -o vibescript && \
+sudo mv vibescript /usr/local/bin/vibescript && \
+rm vibescript.c
+```
+
+#### Windows / Debian / RPM
+
+Baixe o instalador apropriado na [página de releases](https://github.com/OUIsolutions/VibeScript/releases/tag/0.45.1).
+
+## Como Usar
+
+### Executar o servidor
+
 ```bash
 vibescript main.lua
 ```
+
+O servidor tentará iniciar nas portas 3000-5000 (utilizará a primeira porta disponível).
+
+### Acessar a interface web
+
+Após iniciar o servidor, acesse no navegador:
+
+```
+http://localhost:3000
+```
+
+(ou a porta que foi utilizada pelo servidor)
+
+## API Endpoints
+
+### 1. Buscar devedor por CPF/CNPJ
+
+```http
+GET /api/obtem_devedor_por_cpf?devedor={documento}
+```
+
+**Parâmetros:**
+- `devedor` (string, obrigatório): CPF (11 dígitos) ou CNPJ (14 dígitos) apenas números
+
+**Respostas:**
+- `200 OK`: Retorna dados do devedor em JSON
+- `404 Not Found`: Devedor não encontrado
+- `400 Bad Request`: Parâmetro 'devedor' não fornecido
+
+**Exemplo:**
+```bash
+curl http://localhost:3000/api/obtem_devedor_por_cpf?devedor=44107365824
+```
+
+### 2. Listar todos os devedores
+
+```http
+GET /api/listar_devedores
+```
+
+**Resposta:**
+- `200 OK`: Array JSON com todos os devedores cadastrados
+
+**Exemplo:**
+```bash
+curl http://localhost:3000/api/listar_devedores
+```
+
+## Formato dos Dados
+
+Os arquivos JSON na pasta `data/` seguem o seguinte formato:
+
+```json
+{
+  "cpf": "000.000.000-00",
+  "nome_devedor": "Nome Completo",
+  "email": "email@exemplo.com",
+  "endereco": "Rua Exemplo, 123",
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "cep": "00000-000",
+  "numero_contrato": "CONT-2024-001",
+  "data_emissao": "2024-01-15",
+  "valor_operacao": 50000.00,
+  "quantidade_parcelas": 36,
+  "data_primeira_parcela": "2024-02-15",
+  "data_ultima_parcela": "2027-01-15",
+  "descricao_garantia": "Veículo Ford Ka 2020",
+  "renavam": "12345678901",
+  "placa": "ABC1D23",
+  "notificacao_valida": true,
+  "valor_em_aberto_mora": 5000.00,
+  "valor_total_operacoes_em_aberto_mora": 8000.00,
+  "valor_devido_atualizado_vencimento_antecipado": 45000.00
+}
+```
+
+## Tecnologias Utilizadas
+
+- **Backend**: Lua com VibeScript
+- **Frontend**: HTML5, CSS3 (Vanilla), JavaScript (ES6+)
+- **Servidor**: Serjão (servidor HTTP do VibeScript)
+- **Armazenamento**: JSON files
+
+## Licença
+
+Este é um projeto de demonstração. Consulte o arquivo `LICENSE` para mais informações.
