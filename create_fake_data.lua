@@ -20,11 +20,88 @@ function get_cnpj()
     return generate_randon_value(14)
 end
 
-function validate_cpf_data(data)
+function validate_data(data, required_fields)
+    local missing_fields = {}
+    local type_errors = {}
     
+    for field_name, expected_type in pairs(required_fields) do
+        if data[field_name] == nil then
+            table.insert(missing_fields, field_name)
+        else
+            local actual_type = type(data[field_name])
+            if actual_type ~= expected_type then
+                table.insert(type_errors, field_name .. " (expected " .. expected_type .. ", got " .. actual_type .. ")")
+            end
+        end
+    end
+    
+    if #missing_fields > 0 then
+        error("Missing required fields: " .. table.concat(missing_fields, ", "))
+    end
+    
+    if #type_errors > 0 then
+        error("Type validation errors: " .. table.concat(type_errors, ", "))
+    end
 end
+
+function validate_cpf_data(data)
+    local required_fields = {
+        notificacao_valida = "boolean",
+        nome_devedor = "string",
+        cpf_cnpj_devedor = "string",
+        endereco_devedor = "string",
+        comarca = "string",
+        uf = "string",
+        cep = "string",
+        email_devedor = "string",
+        numero_contrato = "string",
+        data_emissao = "number",
+        valor_contrato = "string",
+        quantidade_parcelas = "number",
+        parcela_inicial = "number",
+        parcela_final = "number",
+        descricao_bem = "string",
+        renavam = "string",
+        placa = "string",
+        total_em_atraso_contrato = "string",
+        total_em_atraso_extenso = "string",
+        total_a_pagar = "string",
+        valor_causa = "string",
+        valor_causa_extenso = "string",
+        data_atual = "number",
+        total_em_atraso = "string"
+    }
+    validate_data(data, required_fields)
+end
+
 function validate_cnpj_data(data)
-    
+    local required_fields = {
+        notificacao_valida = "boolean",
+        nome_devedor = "string",
+        cpf_cnpj_devedor = "string",
+        endereco_devedor = "string",
+        comarca = "string",
+        uf = "string",
+        cep = "string",
+        email_devedor = "string",
+        numero_contrato = "string",
+        data_emissao = "number",
+        valor_contrato = "string",
+        quantidade_parcelas = "number",
+        parcela_inicial = "number",
+        parcela_final = "number",
+        descricao_bem = "string",
+        renavam = "string",
+        placa = "string",
+        total_em_atraso_contrato = "string",
+        total_em_atraso_extenso = "string",
+        total_a_pagar = "string",
+        valor_causa = "string",
+        valor_causa_extenso = "string",
+        data_atual = "number",
+        total_em_atraso = "string"
+    }
+    validate_data(data, required_fields)
 end
 
 function construct_element(name,model,validator)
@@ -58,11 +135,11 @@ end
 
 function construct_cpf()
     local cpf = get_cpf()
-    construct_element(cpf, cpf_model)
+    construct_element(cpf, cpf_model, validate_cpf_data)
 end
 function construct_cnpj()
     local cnpj = get_cnpj()
-    construct_element(cnpj, cnpj_model)
+    construct_element(cnpj, cnpj_model, validate_cnpj_data)
 end
 
 
