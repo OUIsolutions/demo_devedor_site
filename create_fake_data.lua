@@ -24,9 +24,8 @@ end
 function construct_element(dest,model)
     llm = newLLM({})
     local result = {}
-    llm.add_system_prompt("construct a json with fake data based on the following model: " .. model)
-
     llm.add_system_prompt("use the function set_fake_data to return the json with fake data")
+    llm.add_user_prompt("construct a json with fake data based on the following model:( " .. model..")")
 
     -- Define the callback function to handle color change
     local set_fake_data = function(args)
@@ -39,7 +38,7 @@ function construct_element(dest,model)
     {
         name = "fake_data",
         description = "The json string with fake data based on the model",
-        type = "json string",
+        type = "string",
         required = true
     }
 }
