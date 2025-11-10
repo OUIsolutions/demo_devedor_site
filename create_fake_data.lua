@@ -1,5 +1,5 @@
 
-local quantity = 1
+local quantity = 2
 CPF = 1
 CNPJ = 2
 
@@ -108,8 +108,10 @@ function construct_element(name,model,validator)
     llm = newLLM({})
     local result = {}
     llm.add_system_prompt("use the function set_fake_data to return the json with fake data")
+    llm.add_system_prompt("the json must have the same schema of the model, but not the same values,create the values randomly")
+    llm.add_system_prompt("the key descricao_bem , must be only about vehicles") 
     llm.add_user_prompt("construct a json with fake data based on the following model:( " .. model..")")
-
+    
     -- Define the callback function to handle color change
     local set_fake_data = function(args)
         local fake_data = args.fake_data
