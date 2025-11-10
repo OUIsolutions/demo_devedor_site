@@ -1,5 +1,5 @@
 
-local quantity = 2
+local quantity = 50
 CPF = 1
 CNPJ = 2
 
