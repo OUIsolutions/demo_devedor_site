@@ -24,13 +24,15 @@ end
 function construct_element(dest,model)
     llm = newLLM({})
     local result = {}
-    llm.add_system_prompt("use the function set_fake_data to return the json with fake data")
     llm.add_system_prompt("construct a json with fake data based on the following model: " .. model)
--- Define the callback function to handle color change
+
+    llm.add_system_prompt("use the function set_fake_data to return the json with fake data")
+
+    -- Define the callback function to handle color change
     local set_fake_data = function(args)
         local fake_data = args.fake_data
         print("Fake Data: " .. fake_data)
-        local parsed = json.load_from_string(args["fake_data"])
+       -- local parsed = json.load_from_string(args["fake_data"])
     end
 
     local parameters = {
