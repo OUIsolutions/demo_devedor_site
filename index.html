@@ -317,14 +317,14 @@
                     <input
                         type="text"
                         id="documento-input"
-                        placeholder="Digite o CPF (apenas números) ou CNPJ (apenas números)"
-                        pattern="[0-9]+"
-                        title="Digite apenas números"
+                        placeholder="Digite o CPF ou CNPJ (com ou sem formatação)"
+                        pattern="[0-9.\-/]+"
+                        title="Digite o CPF ou CNPJ"
                     >
                     <button type="submit">Buscar</button>
                 </form>
                 <p style="color: #666; font-size: 0.9em;">
-                    Exemplos: 44107365824 (CPF) ou 12345678000190 (CNPJ)
+                    Exemplos: 441.073.658-24 ou 44107365824 (CPF) | 12.345.678/0001-90 ou 12345678000190 (CNPJ)
                 </p>
             </div>
 
