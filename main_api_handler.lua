@@ -7,14 +7,14 @@ function main_api_handler(request)
 
         local devedor = request.params["devedor"]
         if not devedor then
-            return  serjao.send_text("'devedor' não passado nos parâmetros", 400)
+            return  serjao.send_json({message="'devedor' não passado nos parâmetros", error=true}, 400)
         end
         local filename = "data/" .. devedor .. ".json"
         -- Verifica se o arquivo existe
         if dtw.isfile(filename) then
             return serjao.send_file(filename, "application/json")
         else
-            return serjao.send_text("Devedor não encontrado", 404)
+            return serjao.send_json({message="Devedor não encontrado", error=true}, 404)
         end
    end
 
