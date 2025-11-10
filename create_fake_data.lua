@@ -113,7 +113,7 @@ function construct_element(name,model,validator)
     -- Define the callback function to handle color change
     local set_fake_data = function(args)
         local fake_data = args.fake_data
-        local parsed = json.load_from_string(args["fake_data"])
+        local parsed = json.load_from_string(fake_data)
         validator(parsed)
         dtw.write_file("data/"..name..".json",json.dumps_to_string(parsed,true))
     end
