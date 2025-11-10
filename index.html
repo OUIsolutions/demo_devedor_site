@@ -308,6 +308,7 @@
         <div class="search-section">
             <div class="tabs">
                 <button class="tab active" onclick="switchTab('busca')">Buscar por CPF/CNPJ</button>
+                <button class="tab" onclick="switchTab('nome')">Buscar por Nome</button>
                 <button class="tab" onclick="switchTab('listagem')">Listar Todos</button>
             </div>
 
@@ -324,6 +325,20 @@
                 </form>
                 <p style="color: #666; font-size: 0.9em;">
                     Exemplos: 44107365824 (CPF) ou 12345678000190 (CNPJ)
+                </p>
+            </div>
+
+            <div id="nome-tab" class="tab-content">
+                <form class="search-form" onsubmit="buscarDevedorPorNome(event)">
+                    <input
+                        type="text"
+                        id="nome-input"
+                        placeholder="Digite o nome do devedor (busca parcial)"
+                    >
+                    <button type="submit">Buscar</button>
+                </form>
+                <p style="color: #666; font-size: 0.9em;">
+                    Digite parte do nome para encontrar devedores (ex: "João", "Silva")
                 </p>
             </div>
 
@@ -566,6 +581,45 @@
                 console.error('Erro:', error);
                 hideResults();
                 showMessage('Erro ao buscar devedor. Tente novamente.', 'error');
+            }
+        }
+
+        async function buscarDevedorPorNome(event) {
+            event.preventDefault();
+            hideMessage();
+
+            const nome = document.getElementById('nome-input').value.trim();
+
+            if (!nome) {
+                showMessage('Por favor, digite um nome para buscar', 'error');
+                return;
+            }
+
+            showLoading();
+
+            try {
+                const response = await fetch(`/api/listar_devedores?nome=${encodeURIComponent(nome)}`);
+
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar devedores');
+                }
+
+                const devedores = await response.json();
+
+                if (devedores.length === 0) {
+                    document.getElementById('results-content').innerHTML =
+                        '<div class="no-results">Nenhum devedor encontrado com este nome.</div>';
+                    return;
+                }
+
+                const html = devedores.map(devedor => renderDevedor(devedor)).join('');
+                document.getElementById('results-content').innerHTML = html;
+                showMessage(`${devedores.length} devedor(es) encontrado(s) com o nome "${nome}"`, 'success');
+
+            } catch (error) {
+                console.error('Erro:', error);
+                hideResults();
+                showMessage('Erro ao buscar devedores por nome. Tente novamente.', 'error');
             }
         }
 
