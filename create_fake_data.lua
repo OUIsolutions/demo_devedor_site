@@ -20,8 +20,14 @@ function get_cnpj()
     return generate_randon_value(14)
 end
 
+function validate_cpf_data(data)
+    
+end
+function validate_cnpj_data(data)
+    
+end
 
-function construct_element(dest,model)
+function construct_element(name,model,validator)
     llm = newLLM({})
     local result = {}
     llm.add_system_prompt("use the function set_fake_data to return the json with fake data")
@@ -30,8 +36,9 @@ function construct_element(dest,model)
     -- Define the callback function to handle color change
     local set_fake_data = function(args)
         local fake_data = args.fake_data
-        print("Fake Data: " .. fake_data)
-       -- local parsed = json.load_from_string(args["fake_data"])
+        local parsed = json.load_from_string(args["fake_data"])
+        validator(parsed)
+        dtw.write_file("data/"..name..".json",fake_data)
     end
 
     local parameters = {
