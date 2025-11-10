@@ -381,14 +381,23 @@
         }
 
         function formatCurrency(value) {
+            // If value is already a formatted string, return it
+            if (typeof value === 'string') {
+                return value;
+            }
+            // Otherwise format as number
             return new Intl.NumberFormat('pt-BR', {
                 style: 'currency',
                 currency: 'BRL'
             }).format(value);
         }
 
-        function formatDate(dateStr) {
-            const [year, month, day] = dateStr.split('-');
+        function formatDate(timestamp) {
+            // Convert Unix timestamp to date
+            const date = new Date(timestamp * 1000);
+            const day = String(date.getDate()).padStart(2, '0');
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const year = date.getFullYear();
             return `${day}/${month}/${year}`;
         }
 
@@ -407,8 +416,7 @@
         }
 
         function renderDevedor(devedor) {
-            const isCPF = devedor.cpf !== undefined;
-            const documento = isCPF ? devedor.cpf : devedor.cnpj;
+            const documento = formatDocument(devedor.cpf_cnpj_devedor);
 
             return `
                 <div class="devedor-card">
@@ -420,15 +428,15 @@
                     <div class="devedor-info">
                         <div class="info-item">
                             <span class="info-label">Email</span>
-                            <span class="info-value">${devedor.email}</span>
+                            <span class="info-value">${devedor.email_devedor}</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">Endereço</span>
-                            <span class="info-value">${devedor.endereco}</span>
+                            <span class="info-value">${devedor.endereco_devedor}</span>
                         </div>
                         <div class="info-item">
-                            <span class="info-label">Cidade/UF</span>
-                            <span class="info-value">${devedor.cidade} - ${devedor.uf}</span>
+                            <span class="info-label">Comarca/UF</span>
+                            <span class="info-value">${devedor.comarca} - ${devedor.uf}</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">CEP</span>
@@ -449,8 +457,8 @@
                             <span class="info-value">${formatDate(devedor.data_emissao)}</span>
                         </div>
                         <div class="info-item">
-                            <span class="info-label">Valor da Operação</span>
-                            <span class="info-value valor-destaque">${formatCurrency(devedor.valor_operacao)}</span>
+                            <span class="info-label">Valor do Contrato</span>
+                            <span class="info-value valor-destaque">${formatCurrency(devedor.valor_contrato)}</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">Quantidade de Parcelas</span>
@@ -458,21 +466,21 @@
                         </div>
                         <div class="info-item">
                             <span class="info-label">Primeira Parcela</span>
-                            <span class="info-value">${formatDate(devedor.data_primeira_parcela)}</span>
+                            <span class="info-value">${formatDate(devedor.parcela_inicial)}</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">Última Parcela</span>
-                            <span class="info-value">${formatDate(devedor.data_ultima_parcela)}</span>
+                            <span class="info-value">${formatDate(devedor.parcela_final)}</span>
                         </div>
                     </div>
 
                     <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
 
-                    <h3 style="color: #667eea; margin-bottom: 15px;">Garantia</h3>
+                    <h3 style="color: #667eea; margin-bottom: 15px;">Bem Alienado</h3>
                     <div class="devedor-info">
                         <div class="info-item">
                             <span class="info-label">Descrição</span>
-                            <span class="info-value">${devedor.descricao_garantia}</span>
+                            <span class="info-value">${devedor.descricao_bem}</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">RENAVAM</span>
@@ -497,16 +505,20 @@
                     <h3 style="color: #c33; margin-bottom: 15px;">Valores em Aberto</h3>
                     <div class="devedor-info">
                         <div class="info-item">
-                            <span class="info-label">Valor em Aberto/Mora</span>
-                            <span class="info-value valor-destaque">${formatCurrency(devedor.valor_em_aberto_mora)}</span>
+                            <span class="info-label">Total em Atraso (Contrato)</span>
+                            <span class="info-value valor-destaque">${formatCurrency(devedor.total_em_atraso_contrato)}</span>
                         </div>
                         <div class="info-item">
-                            <span class="info-label">Total de Operações em Aberto</span>
-                            <span class="info-value valor-destaque">${formatCurrency(devedor.valor_total_operacoes_em_aberto_mora)}</span>
+                            <span class="info-label">Total a Pagar</span>
+                            <span class="info-value valor-destaque">${formatCurrency(devedor.total_a_pagar)}</span>
                         </div>
                         <div class="info-item">
-                            <span class="info-label">Valor Devido Atualizado (Vencimento Antecipado)</span>
-                            <span class="info-value valor-destaque">${formatCurrency(devedor.valor_devido_atualizado_vencimento_antecipado)}</span>
+                            <span class="info-label">Valor da Causa</span>
+                            <span class="info-value valor-destaque">${formatCurrency(devedor.valor_causa)}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Total em Atraso</span>
+                            <span class="info-value valor-destaque">${formatCurrency(devedor.total_em_atraso)}</span>
                         </div>
                     </div>
                 </div>
