@@ -117,6 +117,7 @@ function construct_element(name,model,validator)
         local fake_data = args.fake_data
         local parsed = json.load_from_string(fake_data)
         validator(parsed)
+        parsed["cpf_cnpj_devedor"]= name
         dtw.write_file("data/"..name..".json",json.dumps_to_string(parsed,true))
     end
 
