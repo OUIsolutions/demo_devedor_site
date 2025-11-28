@@ -1,0 +1,59 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Veículo Volkswagen Gol 1.0 2021/2022",
+					"placa":	"XYZ-9A87",
+					"renavam":	"98765432109"
+				}, {
+					"descricao_bem":	"Veículo Honda Civic 2.0 2020/2021",
+					"placa":	"DEF-4G56",
+					"renavam":	"45678912345"
+				}],
+			"cep":	"22000-000",
+			"comarca":	"Rio de Janeiro",
+			"cpf_cnpj_devedor":	"19896978760",
+			"data_emissao":	1640995200,
+			"email_devedor":	"maria.oliveira@email.com.br",
+			"endereco_devedor":	"Avenida Brasil, 567, Casa 2",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1753833600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 8.920,15",
+			"uf":	"RJ",
+			"valor_contrato":	"R$ 65.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Chevrolet Onix 1.4 2022/2023",
+					"placa":	"GHI-7H89",
+					"renavam":	"65432198701"
+				}],
+			"cep":	"30123-456",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"32165498700",
+			"data_emissao":	1672531200,
+			"email_devedor":	"carlos.pereira@email.com.br",
+			"endereco_devedor":	"Rua das Palmeiras, 890, Bloco B",
+			"nome_devedor":	"Carlos Pereira Lima",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1738368000,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	24,
+			"total_em_atraso_contrato":	"R$ 3.830,65",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 42.500,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"descricao_bem":	"Veículo Volkswagen Gol 1.0 2021/2022",
+	"notificacao_valida":	true,
+	"placa":	"XYZ-9A87",
+	"renavam":	"98765432109",
+	"total_a_pagar":	"R$ 8.920,15",
+	"total_a_pagar_extenso":	"oito mil, novecentos e vinte reais e quinze centavos",
+	"total_em_atraso":	"R$ 8.920,15",
+	"total_em_atraso_extenso":	"oito mil, novecentos e vinte reais e quinze centavos",
+	"valor_causa":	"R$ 52.150,75",
+	"valor_causa_extenso":	"cinquenta e dois mil, cento e cinquenta reais e setenta e cinco centavos"
+}

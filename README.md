@@ -115,26 +115,37 @@ Os arquivos JSON na pasta `data/` seguem o seguinte formato:
 
 ```json
 {
-  "cpf": "000.000.000-00",
-  "nome_devedor": "Nome Completo",
-  "email": "email@exemplo.com",
-  "endereco": "Rua Exemplo, 123",
-  "cidade": "São Paulo",
-  "uf": "SP",
-  "cep": "00000-000",
-  "numero_contrato": "CONT-2024-001",
-  "data_emissao": "2024-01-15",
-  "valor_operacao": 50000.00,
-  "quantidade_parcelas": 36,
-  "data_primeira_parcela": "2024-02-15",
-  "data_ultima_parcela": "2027-01-15",
-  "descricao_garantia": "Veículo Ford Ka 2020",
-  "renavam": "12345678901",
-  "placa": "ABC1D23",
-  "notificacao_valida": true,
-  "valor_em_aberto_mora": 5000.00,
-  "valor_total_operacoes_em_aberto_mora": 8000.00,
-  "valor_devido_atualizado_vencimento_antecipado": 45000.00
+    "notificacao_valida": false,
+    "total_em_atraso_extenso": "oitenta e nove mil, duzentos e cinquenta reais e cinquenta centavos",
+    "total_a_pagar": "R$ 89.250,50",
+    "total_a_pagar_extenso": "oitenta e nove mil, duzentos e cinquenta reais e cinquenta centavos",
+    "valor_causa": "R$ 325.640,80",
+    "valor_causa_extenso": "trezentos e vinte e cinco mil, seiscentos e quarenta reais e oitenta centavos",
+    "data_atual": 1731196800,
+    "data_calculo": 1704067200,
+    "total_em_atraso": "R$ 89.250,50",
+    "contratos": [{
+        "nome_devedor": "Construtora ABC Ltda",
+        "total_em_atraso_contrato": "R$ 89.250,50",
+        "cpf_cnpj_devedor": "12345678000190",
+        "endereco_devedor": "Rua Comercial, 789, Sala 302",
+        "comarca": "Rio de Janeiro",
+        "uf": "RJ",
+        "cep": "20040-020",
+        "email_devedor": "financeiro@construtorabc.com.br",
+        "numero_contrato": "CTR-2021-987654",
+        "data_emissao": 1631232000,
+        "valor_contrato": "R$ 450.000,00",
+        "quantidade_parcelas": 72,
+        "parcela_inicial": 1633824000,
+        "parcela_final": 1820707200,
+        "bens": [{
+            "descricao_bem": "Maquinário Pesado - Escavadeira Caterpillar 320D",
+            "renavam": "45678912301",
+            "placa": "DEF-5G67"
+        }]
+        
+    }]
 }
 ```
 

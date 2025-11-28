@@ -1,0 +1,64 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540",
+					"placa":	"ABC-9D87",
+					"renavam":	"78945612345"
+				}, {
+					"descricao_bem":	"Carreta Baú Mercedes-Benz",
+					"placa":	"XYZ-2F34",
+					"renavam":	"32165498765"
+				}],
+			"cep":	"04538-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"51955121741868",
+			"data_emissao":	1640995200,
+			"email_devedor":	"cobranca@transportadoraxyz.com.br",
+			"endereco_devedor":	"Avenida Industrial, 456, Galpão 12",
+			"nome_devedor":	"Transportadora XYZ S.A.",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1807747200,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 45.320,15",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Van Fiat Ducato",
+					"placa":	"MNO-5H67",
+					"renavam":	"65498732109"
+				}, {
+					"descricao_bem":	"Caminhão Scania R450",
+					"placa":	"PQR-8J12",
+					"renavam":	"14725836985"
+				}, {
+					"descricao_bem":	"Moto Honda CB 500X",
+					"placa":	"STU-3K45",
+					"renavam":	"25836914752"
+				}],
+			"cep":	"30130-010",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000178",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@logisticaexpress.com.br",
+			"endereco_devedor":	"Rua Logística, 789, Centro",
+			"nome_devedor":	"Logística Express Ltda",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1798761600,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 70.400,15",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 320.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 115.720,30",
+	"total_a_pagar_extenso":	"cento e quinze mil, setecentos e vinte reais e trinta centavos",
+	"total_em_atraso":	"R$ 115.720,30",
+	"total_em_atraso_extenso":	"cento e quinze mil, setecentos e vinte reais e trinta centavos",
+	"valor_causa":	"R$ 285.900,75",
+	"valor_causa_extenso":	"duzentos e oitenta e cinco mil, novecentos reais e setenta e cinco centavos"
+}
