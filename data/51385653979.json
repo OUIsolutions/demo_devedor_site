@@ -1,0 +1,59 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Veículo Volkswagen Gol 1.6 Trendline 2021/2022",
+					"placa":	"XYZ-2A34",
+					"renavam":	"98765432109"
+				}, {
+					"descricao_bem":	"Veículo Honda Civic Touring 2020",
+					"placa":	"DEF-3B45",
+					"renavam":	"45678912345"
+				}],
+			"cep":	"22000-000",
+			"comarca":	"Rio de Janeiro",
+			"cpf_cnpj_devedor":	"51385653979",
+			"data_emissao":	1640995200,
+			"email_devedor":	"maria.oliveira@email.com",
+			"endereco_devedor":	"Avenida Brasil, 567, Bloco B",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1751328000,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 9.520,40",
+			"uf":	"RJ",
+			"valor_contrato":	"R$ 65.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Chevrolet Onix Plus 1.0 Turbo 2023",
+					"placa":	"GHI-4C56",
+					"renavam":	"78912345678"
+				}],
+			"cep":	"30123-456",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"12345678901",
+			"data_emissao":	1672531200,
+			"email_devedor":	"carlos.pereira@email.com.br",
+			"endereco_devedor":	"Rua das Palmeiras, 890, Casa 2",
+			"nome_devedor":	"Carlos Alberto Pereira",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1798855200,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	42,
+			"total_em_atraso_contrato":	"R$ 7.890,25",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 72.500,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"descricao_bem":	"Veículo Volkswagen Gol 1.6 Trendline 2021/2022",
+	"notificacao_valida":	true,
+	"placa":	"XYZ-2A34",
+	"renavam":	"98765432109",
+	"total_a_pagar":	"R$ 9.520,40",
+	"total_a_pagar_extenso":	"nove mil, quinhentos e vinte reais e quarenta centavos",
+	"total_em_atraso":	"R$ 9.520,40",
+	"total_em_atraso_extenso":	"nove mil, quinhentos e vinte reais e quarenta centavos",
+	"valor_causa":	"R$ 52.800,75",
+	"valor_causa_extenso":	"cinquenta e dois mil, oitocentos reais e setenta e cinco centavos"
+}

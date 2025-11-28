@@ -1,0 +1,56 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Mercedes-Benz Actros 2651",
+					"placa":	"ABC-1D23",
+					"renavam":	"12345678901"
+				}, {
+					"descricao_bem":	"Caminhão Volvo FH 540",
+					"placa":	"XYZ-9F87",
+					"renavam":	"98765432109"
+				}],
+			"cep":	"04538-132",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"89862482390696",
+			"data_emissao":	1640995200,
+			"email_devedor":	"cobranca@transportadoraxyz.com.br",
+			"endereco_devedor":	"Avenida Industrial, 1234, Galpão 5",
+			"nome_devedor":	"Transportadora XYZ S.A.",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1767139200,
+			"parcela_inicial":	1643587200,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 25.430,75",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 180.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Van Fiat Ducato Maxi",
+					"placa":	"MNO-4B56",
+					"renavam":	"65432198701"
+				}],
+			"cep":	"30130-001",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000178",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@logisticarapida.com.br",
+			"endereco_devedor":	"Rua Logística, 567, Pátio 3",
+			"nome_devedor":	"Logística Rápida Ltda",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1738368000,
+			"parcela_inicial":	1675123200,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 20.349,45",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 105.900,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 45.780,20",
+	"total_a_pagar_extenso":	"quarenta e cinco mil, setecentos e oitenta reais e vinte centavos",
+	"total_em_atraso":	"R$ 45.780,20",
+	"total_em_atraso_extenso":	"quarenta e cinco mil, setecentos e oitenta reais e vinte centavos",
+	"valor_causa":	"R$ 285.900,00",
+	"valor_causa_extenso":	"duzentos e oitenta e cinco mil e novecentos reais"
+}

@@ -1,0 +1,84 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540",
+					"placa":	"ABC-1D23",
+					"renavam":	"78912345678"
+				}, {
+					"descricao_bem":	"Carreta Baú Mercedes-Benz",
+					"placa":	"XYZ-9F45",
+					"renavam":	"45678901234"
+				}],
+			"cep":	"04538-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"79036698463775",
+			"data_emissao":	1640995200,
+			"email_devedor":	"financeiro@transportadoraxyz.com.br",
+			"endereco_devedor":	"Avenida Industrial, 456, Galpão 10",
+			"nome_devedor":	"Transportadora XYZ Ltda",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1798761600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 45.780,25",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Fiat Toro Freedom 1.8",
+					"placa":	"MNO-7H89",
+					"renavam":	"23456789012"
+				}, {
+					"descricao_bem":	"Chevrolet Onix Plus 1.0",
+					"placa":	"PQR-3K12",
+					"renavam":	"34567890123"
+				}, {
+					"descricao_bem":	"Volkswagen Polo 1.6",
+					"placa":	"STU-5L67",
+					"renavam":	"45678901234"
+				}],
+			"cep":	"30130-001",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"65432198000145",
+			"data_emissao":	1672531200,
+			"email_devedor":	"contato@speedlocadora.com.br",
+			"endereco_devedor":	"Rua das Flores, 123, Loja 5",
+			"nome_devedor":	"Locadora de Veículos Speed Ltda",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1767139200,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 32.150,75",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 180.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Ônibus Mercedes-Benz O-500RSD",
+					"placa":	"VWX-8M90",
+					"renavam":	"56789012345"
+				}],
+			"cep":	"70040-020",
+			"comarca":	"Brasília",
+			"cpf_cnpj_devedor":	"32198765000178",
+			"data_emissao":	1625097600,
+			"email_devedor":	"administrativo@viacaoexpresso.com.br",
+			"endereco_devedor":	"Rodovia BR-040, Km 25, Terminal",
+			"nome_devedor":	"Empresa de Ônibus Viação Expresso",
+			"numero_contrato":	"CTR-2021-789012",
+			"parcela_final":	1851379200,
+			"parcela_inicial":	1627776000,
+			"quantidade_parcelas":	84,
+			"total_em_atraso_contrato":	"R$ 11.319,50",
+			"uf":	"DF",
+			"valor_contrato":	"R$ 520.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	false,
+	"total_a_pagar":	"R$ 89.250,50",
+	"total_a_pagar_extenso":	"oitenta e nove mil, duzentos e cinquenta reais e cinquenta centavos",
+	"total_em_atraso":	"R$ 89.250,50",
+	"total_em_atraso_extenso":	"oitenta e nove mil, duzentos e cinquenta reais e cinquenta centavos",
+	"valor_causa":	"R$ 325.640,80",
+	"valor_causa_extenso":	"trezentos e vinte e cinco mil, seiscentos e quarenta reais e oitenta centavos"
+}

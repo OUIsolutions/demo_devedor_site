@@ -1,0 +1,56 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540",
+					"placa":	"ABC-1D23",
+					"renavam":	"12345678901"
+				}, {
+					"descricao_bem":	"Van Mercedes-Benz Sprinter",
+					"placa":	"XYZ-9F87",
+					"renavam":	"98765432109"
+				}],
+			"cep":	"04547-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"69055129345532",
+			"data_emissao":	1640995200,
+			"email_devedor":	"cobranca@transportadoraxyz.com.br",
+			"endereco_devedor":	"Avenida Industrial, 456, Galpão 12",
+			"nome_devedor":	"Transportadora XYZ S.A.",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1783209600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 28.150,80",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 320.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Carro Fiat Toro Freedom",
+					"placa":	"MNO-4P56",
+					"renavam":	"55566677788"
+				}],
+			"cep":	"30130-010",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000178",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@logisticaexpress.com.br",
+			"endereco_devedor":	"Rua dos Comerciantes, 321, Loja 5",
+			"nome_devedor":	"Logística Express Ltda",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1751328000,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 17.569,50",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 185.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 45.720,30",
+	"total_a_pagar_extenso":	"quarenta e cinco mil, setecentos e vinte reais e trinta centavos",
+	"total_em_atraso":	"R$ 45.720,30",
+	"total_em_atraso_extenso":	"quarenta e cinco mil, setecentos e vinte reais e trinta centavos",
+	"valor_causa":	"R$ 278.900,75",
+	"valor_causa_extenso":	"duzentos e setenta e oito mil, novecentos reais e setenta e cinco centavos"
+}

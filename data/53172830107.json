@@ -1,0 +1,87 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Veículo Volkswagen Gol 1.6 MSI 2021/2022",
+					"placa":	"XYZ-9A87",
+					"renavam":	"98765432109"
+				}, {
+					"descricao_bem":	"Veículo Honda Civic LX 2020/2021",
+					"placa":	"DEF-5G67",
+					"renavam":	"45678912345"
+				}],
+			"cep":	"20000-123",
+			"comarca":	"Rio de Janeiro",
+			"cpf_cnpj_devedor":	"53172830107",
+			"data_emissao":	1640995200,
+			"email_devedor":	"maria.oliveira@email.com.br",
+			"endereco_devedor":	"Avenida Brasil, 567, Casa 2",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2022-456123",
+			"parcela_final":	1767312000,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 4.250,30",
+			"uf":	"RJ",
+			"valor_contrato":	"R$ 65.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Toyota Corolla GLI 2023/2024",
+					"placa":	"GHI-2J34",
+					"renavam":	"32165498701"
+				}],
+			"cep":	"30123-456",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"98765432100",
+			"data_emissao":	1672531200,
+			"email_devedor":	"carlos.pereira@email.com.br",
+			"endereco_devedor":	"Rua das Palmeiras, 890, Bloco B",
+			"nome_devedor":	"Carlos Eduardo Pereira",
+			"numero_contrato":	"CTR-2023-789654",
+			"parcela_final":	1798848000,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	42,
+			"total_em_atraso_contrato":	"R$ 3.120,45",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 72.500,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Chevrolet Onix Plus 2022/2023",
+					"placa":	"JKL-8M90",
+					"renavam":	"78912345678"
+				}, {
+					"descricao_bem":	"Veículo Hyundai HB20S 2021/2022",
+					"placa":	"MNO-1P23",
+					"renavam":	"15975348620"
+				}, {
+					"descricao_bem":	"Veículo Ford Ka SE 2020/2021",
+					"placa":	"PQR-4S56",
+					"renavam":	"35795148620"
+				}],
+			"cep":	"90012-345",
+			"comarca":	"Porto Alegre",
+			"cpf_cnpj_devedor":	"65432198765",
+			"data_emissao":	1609459200,
+			"email_devedor":	"ana.rodrigues@email.com.br",
+			"endereco_devedor":	"Rua dos Ipês, 234, Apto 301",
+			"nome_devedor":	"Ana Paula Rodrigues",
+			"numero_contrato":	"CTR-2021-321987",
+			"parcela_final":	1735776000,
+			"parcela_inicial":	1612137600,
+			"quantidade_parcelas":	24,
+			"total_em_atraso_contrato":	"R$ 1.549,40",
+			"uf":	"RS",
+			"valor_contrato":	"R$ 48.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"descricao_bem":	"Veículo Volkswagen Gol 1.6 MSI 2021/2022",
+	"notificacao_valida":	true,
+	"placa":	"XYZ-9A87",
+	"renavam":	"98765432109",
+	"total_a_pagar":	"R$ 8.920,15",
+	"total_a_pagar_extenso":	"oito mil, novecentos e vinte reais e quinze centavos",
+	"total_em_atraso":	"R$ 8.920,15",
+	"total_em_atraso_extenso":	"oito mil, novecentos e vinte reais e quinze centavos",
+	"valor_causa":	"R$ 52.300,75",
+	"valor_causa_extenso":	"cinquenta e dois mil, trezentos reais e setenta e cinco centavos"
+}

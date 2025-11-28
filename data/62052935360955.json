@@ -1,0 +1,84 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Mercedes-Benz Actros 2651",
+					"placa":	"ABC-9D12",
+					"renavam":	"78912345678"
+				}, {
+					"descricao_bem":	"Van Fiat Ducato Maxi",
+					"placa":	"XYZ-3F45",
+					"renavam":	"32165498765"
+				}],
+			"cep":	"04547-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"62052935360955",
+			"data_emissao":	1640995200,
+			"email_devedor":	"cobranca@transportadoraxyz.com.br",
+			"endereco_devedor":	"Avenida Industrial, 1234, Galpão 5",
+			"nome_devedor":	"Transportadora XYZ S.A.",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1783209600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 45.320,50",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Caminhonete Toyota Hilux SRV",
+					"placa":	"MNO-7H89",
+					"renavam":	"65498732109"
+				}],
+			"cep":	"30130-010",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000123",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@logisticarapida.com.br",
+			"endereco_devedor":	"Rua Logística, 567, Centro",
+			"nome_devedor":	"Logística Rápida Ltda",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1753833600,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 38.210,75",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 195.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Ônibus Mercedes-Benz O-500RSD",
+					"placa":	"PQR-1J23",
+					"renavam":	"14725836974"
+				}, {
+					"descricao_bem":	"Carro Volkswagen Gol 1.0",
+					"placa":	"STU-5K67",
+					"renavam":	"25836914785"
+				}, {
+					"descricao_bem":	"Moto Honda CG 160 Titan",
+					"placa":	"VWX-8L90",
+					"renavam":	"36914725896"
+				}],
+			"cep":	"90035-001",
+			"comarca":	"Porto Alegre",
+			"cpf_cnpj_devedor":	"32198765000187",
+			"data_emissao":	1627776000,
+			"email_devedor":	"contato@frotanacional.com.br",
+			"endereco_devedor":	"Alameda das Flores, 890, Jardim",
+			"nome_devedor":	"Frota Nacional EIRELI",
+			"numero_contrato":	"CTR-2021-789012",
+			"parcela_final":	1796256000,
+			"parcela_inicial":	1630454400,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 42.248,95",
+			"uf":	"RS",
+			"valor_contrato":	"R$ 320.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 125.780,20",
+	"total_a_pagar_extenso":	"cento e vinte e cinco mil, setecentos e oitenta reais e vinte centavos",
+	"total_em_atraso":	"R$ 125.780,20",
+	"total_em_atraso_extenso":	"cento e vinte e cinco mil, setecentos e oitenta reais e vinte centavos",
+	"valor_causa":	"R$ 485.320,75",
+	"valor_causa_extenso":	"quatrocentos e oitenta e cinco mil, trezentos e vinte reais e setenta e cinco centavos"
+}

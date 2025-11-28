@@ -1,0 +1,59 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Veículo Honda Civic 1.5 Turbo 2020/2021",
+					"placa":	"DEF-5G67",
+					"renavam":	"45678912345"
+				}, {
+					"descricao_bem":	"Veículo Volkswagen Polo 1.0 TSI 2021/2022",
+					"placa":	"GHI-8J90",
+					"renavam":	"78912345678"
+				}],
+			"cep":	"01310-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"94270173038",
+			"data_emissao":	1640995200,
+			"email_devedor":	"maria.oliveira@email.com.br",
+			"endereco_devedor":	"Avenida Paulista, 1000, Apto 1201",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2022-456123",
+			"parcela_final":	1798761600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 8.750,30",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 95.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Chevrolet Onix Plus 1.0 Turbo 2022/2023",
+					"placa":	"JKL-2M34",
+					"renavam":	"32165498701"
+				}],
+			"cep":	"01304-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"98765432100",
+			"data_emissao":	1672531200,
+			"email_devedor":	"carlos.pereira@email.com.br",
+			"endereco_devedor":	"Rua Augusta, 500, Apto 302",
+			"nome_devedor":	"Carlos Eduardo Pereira",
+			"numero_contrato":	"CTR-2023-789654",
+			"parcela_final":	1805155200,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 7.170,15",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 78.500,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"descricao_bem":	"Veículo Toyota Corolla 2.0 XEi 2021/2022",
+	"notificacao_valida":	true,
+	"placa":	"XYZ-9A87",
+	"renavam":	"98765432109",
+	"total_a_pagar":	"R$ 15.920,45",
+	"total_a_pagar_extenso":	"quinze mil, novecentos e vinte reais e quarenta e cinco centavos",
+	"total_em_atraso":	"R$ 15.920,45",
+	"total_em_atraso_extenso":	"quinze mil, novecentos e vinte reais e quarenta e cinco centavos",
+	"valor_causa":	"R$ 92.150,75",
+	"valor_causa_extenso":	"noventa e dois mil, cento e cinquenta reais e setenta e cinco centavos"
+}
