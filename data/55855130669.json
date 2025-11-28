@@ -1,0 +1,67 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Veículo Volkswagen Gol 1.0 2021/2022",
+					"placa":	"XYZ-9A87",
+					"renavam":	"98765432109"
+				}, {
+					"descricao_bem":	"Veículo Honda Civic 2.0 2020/2021",
+					"placa":	"DEF-5G67",
+					"renavam":	"45678912345"
+				}],
+			"cep":	"01310-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"55855130669",
+			"data_emissao":	1640995200,
+			"email_devedor":	"maria.oliveira@email.com.br",
+			"endereco_devedor":	"Avenida Paulista, 1500, Apto 302",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2022-456123",
+			"parcela_final":	1767312000,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 8.520,40",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 65.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Toyota Corolla 1.8 2023/2024",
+					"placa":	"GHI-2J34",
+					"renavam":	"32165498701"
+				}, {
+					"descricao_bem":	"Veículo Chevrolet Onix 1.4 2022/2023",
+					"placa":	"JKL-8M90",
+					"renavam":	"65498732109"
+				}, {
+					"descricao_bem":	"Veículo Ford Ranger 3.2 2021/2022",
+					"placa":	"MNO-1P23",
+					"renavam":	"14725836901"
+				}],
+			"cep":	"22250-040",
+			"comarca":	"Rio de Janeiro",
+			"cpf_cnpj_devedor":	"78912345678",
+			"data_emissao":	1672531200,
+			"email_devedor":	"carlos.pereira@email.com.br",
+			"endereco_devedor":	"Rua Augusta, 789, Loja 15",
+			"nome_devedor":	"Carlos Alberto Pereira",
+			"numero_contrato":	"CTR-2023-789654",
+			"parcela_final":	1798848000,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 15.320,75",
+			"uf":	"RJ",
+			"valor_contrato":	"R$ 120.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"descricao_bem":	"Veículo Volkswagen Gol 1.0 2021/2022",
+	"notificacao_valida":	true,
+	"placa":	"XYZ-9A87",
+	"renavam":	"98765432109",
+	"total_a_pagar":	"R$ 8.520,40",
+	"total_a_pagar_extenso":	"oito mil, quinhentos e vinte reais e quarenta centavos",
+	"total_em_atraso":	"R$ 8.520,40",
+	"total_em_atraso_extenso":	"oito mil, quinhentos e vinte reais e quarenta centavos",
+	"valor_causa":	"R$ 45.680,90",
+	"valor_causa_extenso":	"quarenta e cinco mil, seiscentos e oitenta reais e noventa centavos"
+}

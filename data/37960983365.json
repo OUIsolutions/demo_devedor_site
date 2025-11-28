@@ -1,0 +1,59 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Veículo Volkswagen Polo 1.6 MSI 2021/2022",
+					"placa":	"XYZ-9A87",
+					"renavam":	"98765432109"
+				}, {
+					"descricao_bem":	"Veículo Honda Civic 2.0 Touring 2020/2021",
+					"placa":	"DEF-4G56",
+					"renavam":	"45678912345"
+				}],
+			"cep":	"22000-000",
+			"comarca":	"Rio de Janeiro",
+			"cpf_cnpj_devedor":	"37960983365",
+			"data_emissao":	1640995200,
+			"email_devedor":	"maria.oliveira@email.com.br",
+			"endereco_devedor":	"Avenida Brasil, 567, Casa 2",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1753833600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 8.450,75",
+			"uf":	"RJ",
+			"valor_contrato":	"R$ 65.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Chevrolet Onix Plus 1.0 Turbo 2023",
+					"placa":	"GHI-7H89",
+					"renavam":	"78912345678"
+				}],
+			"cep":	"30123-456",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"33456789012",
+			"data_emissao":	1672531200,
+			"email_devedor":	"pedro.almeida@email.com.br",
+			"endereco_devedor":	"Rua das Palmeiras, 890, Bloco B",
+			"nome_devedor":	"Pedro Almeida Souza",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1798855200,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 7.469,65",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 78.500,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"descricao_bem":	"Veículo Volkswagen Polo 1.6 MSI 2021/2022",
+	"notificacao_valida":	true,
+	"placa":	"XYZ-9A87",
+	"renavam":	"98765432109",
+	"total_a_pagar":	"R$ 15.920,40",
+	"total_a_pagar_extenso":	"quinze mil, novecentos e vinte reais e quarenta centavos",
+	"total_em_atraso":	"R$ 15.920,40",
+	"total_em_atraso_extenso":	"quinze mil, novecentos e vinte reais e quarenta centavos",
+	"valor_causa":	"R$ 72.150,25",
+	"valor_causa_extenso":	"setenta e dois mil, cento e cinquenta reais e vinte e cinco centavos"
+}
