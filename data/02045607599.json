@@ -1,0 +1,27 @@
+
+{
+	"cep":	"21000-000",
+	"comarca":	"Rio de Janeiro",
+	"cpf_cnpj_devedor":	"02045607599",
+	"data_atual":	1732963200,
+	"data_emissao":	1679356800,
+	"descricao_bem":	"Veículo Honda Civic 2.0 LX 2020/2021",
+	"email_devedor":	"miguel.oliveira@email.com",
+	"endereco_devedor":	"Avenida Litoral, 990, Bloco 2",
+	"nome_devedor":	"Miguel Oliveira Souza",
+	"notificacao_valida":	true,
+	"numero_contrato":	"CTR-2023-987654",
+	"parcela_final":	1813219200,
+	"parcela_inicial":	1682035200,
+	"placa":	"XYZ-9Z89",
+	"quantidade_parcelas":	60,
+	"renavam":	"98765432101",
+	"total_a_pagar":	"R$15,500.00",
+	"total_em_atraso":	"R$15,500.00",
+	"total_em_atraso_contrato":	"R$15,500.00",
+	"total_em_atraso_extenso":	"quinze mil e quinhentos reais",
+	"uf":	"RJ",
+	"valor_causa":	"R$82,300.00",
+	"valor_causa_extenso":	"oitenta e dois mil e trezentos reais",
+	"valor_contrato":	"R$120,000.00"
+}
