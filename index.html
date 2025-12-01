@@ -436,8 +436,8 @@
                 return '<div class="no-results">Devedor sem contratos cadastrados.</div>';
             }
 
-            // Renderiza cada contrato
-            return devedor.contratos.map(contrato => {
+            // Renderiza cada contrato como um card separado
+            const contratosHtml = devedor.contratos.map((contrato, index) => {
                 const documento = formatDocument(contrato.cpf_cnpj_devedor);
 
                 // Renderiza os bens do contrato
@@ -463,11 +463,16 @@
 
                 return `
                     <div class="devedor-card">
+                        <div style="background: #667eea; color: white; padding: 10px 15px; border-radius: 8px; margin-bottom: 15px; display: inline-block;">
+                            <strong>Contrato ${index + 1} de ${devedor.contratos.length}</strong>
+                        </div>
+
                         <div class="devedor-header">
                             <div class="devedor-nome">${contrato.nome_devedor}</div>
                             <div class="devedor-doc">${documento}</div>
                         </div>
 
+                        <h4 style="color: #667eea; margin: 20px 0 15px 0;">Dados do Devedor</h4>
                         <div class="devedor-info">
                             <div class="info-item">
                                 <span class="info-label">Email</span>
@@ -487,9 +492,7 @@
                             </div>
                         </div>
 
-                        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
-
-                        <h3 style="color: #667eea; margin-bottom: 15px;">Informações do Contrato</h3>
+                        <h4 style="color: #667eea; margin: 20px 0 15px 0;">Informações do Contrato</h4>
                         <div class="devedor-info">
                             <div class="info-item">
                                 <span class="info-label">Número do Contrato</span>
@@ -521,39 +524,63 @@
                             </div>
                         </div>
 
-                        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
-
-                        <h3 style="color: #667eea; margin-bottom: 15px;">Bens Alienados (${contrato.bens.length})</h3>
+                        <h4 style="color: #667eea; margin: 20px 0 15px 0;">Bens Alienados (${contrato.bens.length})</h4>
                         ${bensHtml}
-
-                        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
-
-                        <h3 style="color: #c33; margin-bottom: 15px;">Resumo Total</h3>
-                        <div class="devedor-info">
-                            <div class="info-item">
-                                <span class="info-label">Notificação</span>
-                                <span class="info-value">
-                                    <span class="status-badge ${devedor.notificacao_valida ? 'valida' : 'invalida'}">
-                                        ${devedor.notificacao_valida ? 'Válida' : 'Inválida'}
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">Total a Pagar</span>
-                                <span class="info-value valor-destaque">${formatCurrency(devedor.total_a_pagar)}</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">Total em Atraso</span>
-                                <span class="info-value valor-destaque">${formatCurrency(devedor.total_em_atraso)}</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">Valor da Causa</span>
-                                <span class="info-value valor-destaque">${formatCurrency(devedor.valor_causa)}</span>
-                            </div>
-                        </div>
                     </div>
                 `;
             }).join('');
+
+            // Card de resumo geral (informações do nível do documento)
+            const resumoGeral = `
+                <div class="devedor-card" style="border-left-color: #c33; background: #fff5f5;">
+                    <h3 style="color: #c33; margin-bottom: 15px;">📊 Resumo Geral do Documento</h3>
+                    <p style="color: #666; margin-bottom: 20px;">
+                        Totais consolidados de todos os ${devedor.contratos.length} contrato(s) deste documento
+                    </p>
+                    
+                    <div class="devedor-info">
+                        <div class="info-item">
+                            <span class="info-label">Data de Cálculo</span>
+                            <span class="info-value">${formatDate(devedor.data_calculo)}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Data Atual</span>
+                            <span class="info-value">${formatDate(devedor.data_atual)}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Notificação</span>
+                            <span class="info-value">
+                                <span class="status-badge ${devedor.notificacao_valida ? 'valida' : 'invalida'}">
+                                    ${devedor.notificacao_valida ? 'Válida' : 'Inválida'}
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+                    <h4 style="color: #c33; margin-bottom: 15px;">Valores Totais</h4>
+                    <div class="devedor-info">
+                        <div class="info-item">
+                            <span class="info-label">Total a Pagar</span>
+                            <span class="info-value valor-destaque">${formatCurrency(devedor.total_a_pagar)}</span>
+                            <span style="font-size: 0.85em; color: #666; margin-top: 5px;">${devedor.total_a_pagar_extenso}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Total em Atraso</span>
+                            <span class="info-value valor-destaque">${formatCurrency(devedor.total_em_atraso)}</span>
+                            <span style="font-size: 0.85em; color: #666; margin-top: 5px;">${devedor.total_em_atraso_extenso}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Valor da Causa</span>
+                            <span class="info-value valor-destaque">${formatCurrency(devedor.valor_causa)}</span>
+                            <span style="font-size: 0.85em; color: #666; margin-top: 5px;">${devedor.valor_causa_extenso}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            return contratosHtml + resumoGeral;
         }
 
         async function buscarDevedor(event) {
