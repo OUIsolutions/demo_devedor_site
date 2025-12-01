@@ -1,4 +1,3 @@
-
 -- Define your request handler
 function main_api_handler(request)
   -- Process the request here
@@ -21,7 +20,7 @@ function main_api_handler(request)
    if request.route == "/api/obtem_devedor_por_nome" then
         local nome = request.params["nome"]
         if not nome then
-            return serjao.send_text("'nome' não passado nos parâmetros", 400)
+            return serjao.send_json({message="'nome' não passado nos parâmetros", error=true}, 400)
         end
 
         -- Convert search term to lowercase for case-insensitive search
@@ -33,13 +32,18 @@ function main_api_handler(request)
             local content = dtw.load_file(current)
             local parsed = json.load_from_string(content)
 
-            -- Check if nome_devedor contains the search term (case-insensitive)
-            if parsed.nome_devedor and string.find(string.lower(parsed.nome_devedor), nome_busca, 1, true) then
-                return parsed
+            -- Check if any contract has a matching nome_devedor
+            if parsed.contratos then
+                for j = 1, #parsed.contratos do
+                    local contrato = parsed.contratos[j]
+                    if contrato.nome_devedor and string.find(string.lower(contrato.nome_devedor), nome_busca, 1, true) then
+                        return serjao.send_json(parsed)
+                    end
+                end
             end
         end
 
-        return serjao.send_text("Devedor não encontrado", 404)
+        return serjao.send_json({message="Devedor não encontrado", error=true}, 404)
    end
 
    if request.route == "/api/listar_devedores" then
@@ -55,7 +59,20 @@ function main_api_handler(request)
             -- If nome_filtro is provided, only include matching debtors
             if nome_filtro then
                 local nome_busca = string.lower(nome_filtro)
-                if parsed.nome_devedor and string.find(string.lower(parsed.nome_devedor), nome_busca, 1, true) then
+                local encontrou = false
+                
+                -- Check if any contract has a matching nome_devedor
+                if parsed.contratos then
+                    for j = 1, #parsed.contratos do
+                        local contrato = parsed.contratos[j]
+                        if contrato.nome_devedor and string.find(string.lower(contrato.nome_devedor), nome_busca, 1, true) then
+                            encontrou = true
+                            break
+                        end
+                    end
+                end
+                
+                if encontrou then
                     table.insert(devedores, parsed)
                 end
             else
@@ -63,11 +80,9 @@ function main_api_handler(request)
             end
         end
 
-        return devedores
+        return serjao.send_json(devedores)
    end
 
    return serjao.send_file("index.html", "text/html")
-
-
 
 end
