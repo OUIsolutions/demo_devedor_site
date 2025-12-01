@@ -431,113 +431,129 @@
         }
 
         function renderDevedor(devedor) {
-            const documento = formatDocument(devedor.cpf_cnpj_devedor);
+            // Verifica se há contratos
+            if (!devedor.contratos || devedor.contratos.length === 0) {
+                return '<div class="no-results">Devedor sem contratos cadastrados.</div>';
+            }
 
-            return `
-                <div class="devedor-card">
-                    <div class="devedor-header">
-                        <div class="devedor-nome">${devedor.nome_devedor}</div>
-                        <div class="devedor-doc">${documento}</div>
-                    </div>
+            // Renderiza cada contrato
+            return devedor.contratos.map(contrato => {
+                const documento = formatDocument(contrato.cpf_cnpj_devedor);
 
-                    <div class="devedor-info">
-                        <div class="info-item">
-                            <span class="info-label">Email</span>
-                            <span class="info-value">${devedor.email_devedor}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Endereço</span>
-                            <span class="info-value">${devedor.endereco_devedor}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Comarca/UF</span>
-                            <span class="info-value">${devedor.comarca} - ${devedor.uf}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">CEP</span>
-                            <span class="info-value">${devedor.cep}</span>
-                        </div>
-                    </div>
-
-                    <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
-
-                    <h3 style="color: #667eea; margin-bottom: 15px;">Informações do Contrato</h3>
-                    <div class="devedor-info">
-                        <div class="info-item">
-                            <span class="info-label">Número do Contrato</span>
-                            <span class="info-value">${devedor.numero_contrato}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Data de Emissão</span>
-                            <span class="info-value">${formatDate(devedor.data_emissao)}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Valor do Contrato</span>
-                            <span class="info-value valor-destaque">${formatCurrency(devedor.valor_contrato)}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Quantidade de Parcelas</span>
-                            <span class="info-value">${devedor.quantidade_parcelas}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Primeira Parcela</span>
-                            <span class="info-value">${formatDate(devedor.parcela_inicial)}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Última Parcela</span>
-                            <span class="info-value">${formatDate(devedor.parcela_final)}</span>
+                // Renderiza os bens do contrato
+                const bensHtml = contrato.bens.map(bem => `
+                    <div class="devedor-card" style="margin-left: 20px; border-left-color: #764ba2;">
+                        <h4 style="color: #667eea; margin-bottom: 10px;">Bem Alienado</h4>
+                        <div class="devedor-info">
+                            <div class="info-item">
+                                <span class="info-label">Descrição</span>
+                                <span class="info-value">${bem.descricao_bem}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">RENAVAM</span>
+                                <span class="info-value">${bem.renavam}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Placa</span>
+                                <span class="info-value">${bem.placa}</span>
+                            </div>
                         </div>
                     </div>
+                `).join('');
 
-                    <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+                return `
+                    <div class="devedor-card">
+                        <div class="devedor-header">
+                            <div class="devedor-nome">${contrato.nome_devedor}</div>
+                            <div class="devedor-doc">${documento}</div>
+                        </div>
 
-                    <h3 style="color: #667eea; margin-bottom: 15px;">Bem Alienado</h3>
-                    <div class="devedor-info">
-                        <div class="info-item">
-                            <span class="info-label">Descrição</span>
-                            <span class="info-value">${devedor.descricao_bem}</span>
+                        <div class="devedor-info">
+                            <div class="info-item">
+                                <span class="info-label">Email</span>
+                                <span class="info-value">${contrato.email_devedor}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Endereço</span>
+                                <span class="info-value">${contrato.endereco_devedor}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Comarca/UF</span>
+                                <span class="info-value">${contrato.comarca} - ${contrato.uf}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">CEP</span>
+                                <span class="info-value">${contrato.cep}</span>
+                            </div>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">RENAVAM</span>
-                            <span class="info-value">${devedor.renavam}</span>
+
+                        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+                        <h3 style="color: #667eea; margin-bottom: 15px;">Informações do Contrato</h3>
+                        <div class="devedor-info">
+                            <div class="info-item">
+                                <span class="info-label">Número do Contrato</span>
+                                <span class="info-value">${contrato.numero_contrato}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Data de Emissão</span>
+                                <span class="info-value">${formatDate(contrato.data_emissao)}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Valor do Contrato</span>
+                                <span class="info-value valor-destaque">${formatCurrency(contrato.valor_contrato)}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Quantidade de Parcelas</span>
+                                <span class="info-value">${contrato.quantidade_parcelas}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Primeira Parcela</span>
+                                <span class="info-value">${formatDate(contrato.parcela_inicial)}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Última Parcela</span>
+                                <span class="info-value">${formatDate(contrato.parcela_final)}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Total em Atraso (Contrato)</span>
+                                <span class="info-value valor-destaque">${formatCurrency(contrato.total_em_atraso_contrato)}</span>
+                            </div>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Placa</span>
-                            <span class="info-value">${devedor.placa}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Notificação</span>
-                            <span class="info-value">
-                                <span class="status-badge ${devedor.notificacao_valida ? 'valida' : 'invalida'}">
-                                    ${devedor.notificacao_valida ? 'Válida' : 'Inválida'}
+
+                        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+                        <h3 style="color: #667eea; margin-bottom: 15px;">Bens Alienados (${contrato.bens.length})</h3>
+                        ${bensHtml}
+
+                        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+                        <h3 style="color: #c33; margin-bottom: 15px;">Resumo Total</h3>
+                        <div class="devedor-info">
+                            <div class="info-item">
+                                <span class="info-label">Notificação</span>
+                                <span class="info-value">
+                                    <span class="status-badge ${devedor.notificacao_valida ? 'valida' : 'invalida'}">
+                                        ${devedor.notificacao_valida ? 'Válida' : 'Inválida'}
+                                    </span>
                                 </span>
-                            </span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Total a Pagar</span>
+                                <span class="info-value valor-destaque">${formatCurrency(devedor.total_a_pagar)}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Total em Atraso</span>
+                                <span class="info-value valor-destaque">${formatCurrency(devedor.total_em_atraso)}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Valor da Causa</span>
+                                <span class="info-value valor-destaque">${formatCurrency(devedor.valor_causa)}</span>
+                            </div>
                         </div>
                     </div>
-
-                    <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
-
-                    <h3 style="color: #c33; margin-bottom: 15px;">Valores em Aberto</h3>
-                    <div class="devedor-info">
-                        <div class="info-item">
-                            <span class="info-label">Total em Atraso (Contrato)</span>
-                            <span class="info-value valor-destaque">${formatCurrency(devedor.total_em_atraso_contrato)}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Total a Pagar</span>
-                            <span class="info-value valor-destaque">${formatCurrency(devedor.total_a_pagar)}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Valor da Causa</span>
-                            <span class="info-value valor-destaque">${formatCurrency(devedor.valor_causa)}</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Total em Atraso</span>
-                            <span class="info-value valor-destaque">${formatCurrency(devedor.total_em_atraso)}</span>
-                        </div>
-                    </div>
-                </div>
-            `;
+                `;
+            }).join('');
         }
 
         async function buscarDevedor(event) {
