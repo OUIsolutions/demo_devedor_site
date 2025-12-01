@@ -1,0 +1,84 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540 6x4",
+					"placa":	"ABC-9D12",
+					"renavam":	"78912345602"
+				}, {
+					"descricao_bem":	"Van Mercedes-Benz Sprinter 319",
+					"placa":	"XYZ-7F89",
+					"renavam":	"32165498703"
+				}],
+			"cep":	"04538-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"65955435498428",
+			"data_emissao":	1640995200,
+			"email_devedor":	"contas@transportesveloz.com.br",
+			"endereco_devedor":	"Avenida Industrial, 456, Galpão 12",
+			"nome_devedor":	"Transportes Veloz S.A.",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1767225600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 45.820,75",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Carreta Scania R450 6x2",
+					"placa":	"MNO-3B45",
+					"renavam":	"65498732104"
+				}],
+			"cep":	"30130-010",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000123",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@logexpressa.com.br",
+			"endereco_devedor":	"Rua Logística, 789, Andar 3",
+			"nome_devedor":	"Logística Expressa Ltda",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1731196800,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 38.154,20",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 195.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Ônibus Mercedes-Benz O500RSD",
+					"placa":	"PQR-1A23",
+					"renavam":	"98765432105"
+				}, {
+					"descricao_bem":	"Micro-ônibus Volkswagen 17.230",
+					"placa":	"STU-8C90",
+					"renavam":	"12345678906"
+				}, {
+					"descricao_bem":	"Caminhão Ford Cargo 2429",
+					"placa":	"VWX-5D67",
+					"renavam":	"45612378907"
+				}],
+			"cep":	"80010-010",
+			"comarca":	"Curitiba",
+			"cpf_cnpj_devedor":	"32198765000178",
+			"data_emissao":	1625097600,
+			"email_devedor":	"cobranca@fretamentorapido.com.br",
+			"endereco_devedor":	"Alameda dos Transportes, 321",
+			"nome_devedor":	"Fretamento Rápido EIRELI",
+			"numero_contrato":	"CTR-2021-789012",
+			"parcela_final":	1798761600,
+			"parcela_inicial":	1627776000,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 39.500,35",
+			"uf":	"PR",
+			"valor_contrato":	"R$ 320.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 123.475,30",
+	"total_a_pagar_extenso":	"cento e vinte e três mil, quatrocentos e setenta e cinco reais e trinta centavos",
+	"total_em_atraso":	"R$ 123.475,30",
+	"total_em_atraso_extenso":	"cento e vinte e três mil, quatrocentos e setenta e cinco reais e trinta centavos",
+	"valor_causa":	"R$ 587.920,15",
+	"valor_causa_extenso":	"quinhentos e oitenta e sete mil, novecentos e vinte reais e quinze centavos"
+}

@@ -1,0 +1,64 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540 6x2",
+					"placa":	"ABC-9D34",
+					"renavam":	"78945612302"
+				}, {
+					"descricao_bem":	"Van Mercedes-Benz Sprinter 313",
+					"placa":	"XYZ-7F89",
+					"renavam":	"32165498703"
+				}],
+			"cep":	"04538-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"56517698235212",
+			"data_emissao":	1640995200,
+			"email_devedor":	"contato@transportesrapido.com.br",
+			"endereco_devedor":	"Avenida Industrial, 1500, Galpão 3",
+			"nome_devedor":	"Transportes Rápido Express Ltda",
+			"numero_contrato":	"CTR-2022-112233",
+			"parcela_final":	1767139200,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 45.320,50",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Caminhão Scania R450 6x4",
+					"placa":	"MNO-2B56",
+					"renavam":	"65412378904"
+				}, {
+					"descricao_bem":	"Carreta Bitrem Mercedes-Benz",
+					"placa":	"PQR-8C12",
+					"renavam":	"98732165405"
+				}, {
+					"descricao_bem":	"Ônibus Marcopolo Paradiso 1800",
+					"placa":	"STU-4A78",
+					"renavam":	"45698732106"
+				}],
+			"cep":	"30130-001",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"11223344000155",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@logisticanacional.com.br",
+			"endereco_devedor":	"Rua das Flores, 2500, Andar 8",
+			"nome_devedor":	"Logística Nacional S.A.",
+			"numero_contrato":	"CTR-2023-445566",
+			"parcela_final":	1809388800,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 78.130,25",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 650.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 123.450,75",
+	"total_a_pagar_extenso":	"cento e vinte e três mil, quatrocentos e cinquenta reais e setenta e cinco centavos",
+	"total_em_atraso":	"R$ 123.450,75",
+	"total_em_atraso_extenso":	"cento e vinte e três mil, quatrocentos e cinquenta reais e setenta e cinco centavos",
+	"valor_causa":	"R$ 587.320,90",
+	"valor_causa_extenso":	"quinhentos e oitenta e sete mil, trezentos e vinte reais e noventa centavos"
+}

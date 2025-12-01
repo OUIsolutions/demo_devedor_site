@@ -1,0 +1,64 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Mercedes-Benz Actros 2651",
+					"placa":	"ABC-9D12",
+					"renavam":	"78912345602"
+				}, {
+					"descricao_bem":	"Carreta Baú Scania R450",
+					"placa":	"XYZ-7F89",
+					"renavam":	"32165498703"
+				}],
+			"cep":	"04538-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"54183144191815",
+			"data_emissao":	1640995200,
+			"email_devedor":	"contato@transportesrapido.com.br",
+			"endereco_devedor":	"Avenida Industrial, 456, Galpão 12",
+			"nome_devedor":	"Transportes Rápido Ltda",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1783209600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 45.320,50",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Fiat Strada Adventure 1.4",
+					"placa":	"MNO-3B45",
+					"renavam":	"65498732104"
+				}, {
+					"descricao_bem":	"Volkswagen Amarok Highline 3.0",
+					"placa":	"PQR-6C78",
+					"renavam":	"98732165405"
+				}, {
+					"descricao_bem":	"Toyota Hilux SRX 2.8",
+					"placa":	"STU-9D01",
+					"renavam":	"12398745606"
+				}],
+			"cep":	"30130-000",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000145",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@locadoraexpresso.com.br",
+			"endereco_devedor":	"Rua das Flores, 123, Loja 5",
+			"nome_devedor":	"Locadora Veículos Expresso ME",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1722470400,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 78.464,70",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 350.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 123.785,20",
+	"total_a_pagar_extenso":	"cento e vinte e três mil, setecentos e oitenta e cinco reais e vinte centavos",
+	"total_em_atraso":	"R$ 123.785,20",
+	"total_em_atraso_extenso":	"cento e vinte e três mil, setecentos e oitenta e cinco reais e vinte centavos",
+	"valor_causa":	"R$ 542.890,75",
+	"valor_causa_extenso":	"quinhentos e quarenta e dois mil, oitocentos e noventa reais e setenta e cinco centavos"
+}

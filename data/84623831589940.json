@@ -1,0 +1,64 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540 6x4",
+					"placa":	"ABC-9D43",
+					"renavam":	"78912345602"
+				}, {
+					"descricao_bem":	"Carreta Baú Mercedes-Benz LS 1935",
+					"placa":	"XYZ-7F21",
+					"renavam":	"32165498703"
+				}],
+			"cep":	"04538-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"84623831589940",
+			"data_emissao":	1640995200,
+			"email_devedor":	"cobranca@transportesxyz.com.br",
+			"endereco_devedor":	"Avenida Industrial, 456, Galpão 10",
+			"nome_devedor":	"Transportes XYZ S.A.",
+			"numero_contrato":	"CTR-2022-112233",
+			"parcela_final":	1767139200,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 45.320,80",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Van Fiat Ducato Maxi 2.3",
+					"placa":	"MNO-2B89",
+					"renavam":	"65498732104"
+				}, {
+					"descricao_bem":	"Pick-up Toyota Hilux SRV 4x4",
+					"placa":	"PQR-5C12",
+					"renavam":	"14725836905"
+				}, {
+					"descricao_bem":	"Ônibus Mercedes-Benz O-500RSD",
+					"placa":	"STU-8D34",
+					"renavam":	"25836914706"
+				}],
+			"cep":	"30130-001",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000134",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@logisticarapida.com.br",
+			"endereco_devedor":	"Rua Logística, 789, Andar 5",
+			"nome_devedor":	"Logística Rápida Ltda",
+			"numero_contrato":	"CTR-2023-445566",
+			"parcela_final":	1814400000,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 78.129,95",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 350.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 123.450,75",
+	"total_a_pagar_extenso":	"cento e vinte e três mil, quatrocentos e cinquenta reais e setenta e cinco centavos",
+	"total_em_atraso":	"R$ 123.450,75",
+	"total_em_atraso_extenso":	"cento e vinte e três mil, quatrocentos e cinquenta reais e setenta e cinco centavos",
+	"valor_causa":	"R$ 512.890,30",
+	"valor_causa_extenso":	"quinhentos e doze mil, oitocentos e noventa reais e trinta centavos"
+}

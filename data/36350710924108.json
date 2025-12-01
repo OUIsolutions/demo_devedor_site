@@ -1,0 +1,84 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540 6x4",
+					"placa":	"ABC-9D43",
+					"renavam":	"78901234567"
+				}, {
+					"descricao_bem":	"Carreta Baú Mercedes-Benz LS 1935",
+					"placa":	"XYZ-2F89",
+					"renavam":	"89012345678"
+				}],
+			"cep":	"04538-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"36350710924108",
+			"data_emissao":	1640995200,
+			"email_devedor":	"contas@transportadoraexpresso.com.br",
+			"endereco_devedor":	"Avenida Industrial, 1234, Galpão 5",
+			"nome_devedor":	"Transportadora Expresso Norte S.A.",
+			"numero_contrato":	"CTR-2022-543210",
+			"parcela_final":	1783209600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 42.150,75",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 320.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Fiat Toro Freedom 1.8 16V",
+					"placa":	"MNO-7H21",
+					"renavam":	"23456789012"
+				}, {
+					"descricao_bem":	"Jeep Compass Limited 2.0",
+					"placa":	"PQR-3J65",
+					"renavam":	"34567890123"
+				}, {
+					"descricao_bem":	"Toyota Hilux SRV 2.8 Diesel",
+					"placa":	"STU-8K90",
+					"renavam":	"45678901234"
+				}],
+			"cep":	"30130-001",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000123",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@locadorapremium.com.br",
+			"endereco_devedor":	"Rua das Flores, 567, Loja 12",
+			"nome_devedor":	"Locadora de Veículos Premium Ltda",
+			"numero_contrato":	"CTR-2023-789012",
+			"parcela_final":	1731196800,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 38.420,15",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 280.500,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Furgão Renault Master 2.3 DCI",
+					"placa":	"VWX-1L34",
+					"renavam":	"56789012345"
+				}],
+			"cep":	"80010-010",
+			"comarca":	"Curitiba",
+			"cpf_cnpj_devedor":	"32109876000189",
+			"data_emissao":	1625097600,
+			"email_devedor":	"cobranca@autopecasmaster.com.br",
+			"endereco_devedor":	"Rodovia BR-101, Km 45, S/N",
+			"nome_devedor":	"Auto Peças Master Comércio Ltda",
+			"numero_contrato":	"CTR-2021-654321",
+			"parcela_final":	1798761600,
+			"parcela_inicial":	1627776000,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 35.209,30",
+			"uf":	"PR",
+			"valor_contrato":	"R$ 195.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 115.780,20",
+	"total_a_pagar_extenso":	"cento e quinze mil, setecentos e oitenta reais e vinte centavos",
+	"total_em_atraso":	"R$ 115.780,20",
+	"total_em_atraso_extenso":	"cento e quinze mil, setecentos e oitenta reais e vinte centavos",
+	"valor_causa":	"R$ 485.320,90",
+	"valor_causa_extenso":	"quatrocentos e oitenta e cinco mil, trezentos e vinte reais e noventa centavos"
+}

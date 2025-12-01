@@ -1,0 +1,64 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Volkswagen Gol 1.0 2021/2022",
+					"placa":	"XYZ-9A87",
+					"renavam":	"23456789012"
+				}, {
+					"descricao_bem":	"Chevrolet Onix 1.4 LT 2023",
+					"placa":	"DEF-5B43",
+					"renavam":	"34567890123"
+				}],
+			"cep":	"01310-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"24679372618",
+			"data_emissao":	1676246400,
+			"email_devedor":	"maria.oliveira@email.com.br",
+			"endereco_devedor":	"Avenida Paulista, 1000, Conjunto 1201",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1783209600,
+			"parcela_inicial":	1678924800,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 8.450,75",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 65.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Toyota Corolla 2.0 XEi 2022",
+					"placa":	"GHI-2C65",
+					"renavam":	"45678901234"
+				}, {
+					"descricao_bem":	"Honda Civic 1.5 Turbo 2023",
+					"placa":	"JKL-8D21",
+					"renavam":	"56789012345"
+				}, {
+					"descricao_bem":	"Ford Ranger 3.2 XLT 2021",
+					"placa":	"MNO-4E98",
+					"renavam":	"67890123456"
+				}],
+			"cep":	"01304-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"12345678900",
+			"data_emissao":	1680307200,
+			"email_devedor":	"carlos.pereira@email.com.br",
+			"endereco_devedor":	"Rua Augusta, 500, Loja 25",
+			"nome_devedor":	"Carlos Eduardo Pereira",
+			"numero_contrato":	"CTR-2023-987654",
+			"parcela_final":	1806624000,
+			"parcela_inicial":	1682985600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 7.469,70",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 78.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 15.920,45",
+	"total_a_pagar_extenso":	"quinze mil, novecentos e vinte reais e quarenta e cinco centavos",
+	"total_em_atraso":	"R$ 15.920,45",
+	"total_em_atraso_extenso":	"quinze mil, novecentos e vinte reais e quarenta e cinco centavos",
+	"valor_causa":	"R$ 72.580,90",
+	"valor_causa_extenso":	"setenta e dois mil, quinhentos e oitenta reais e noventa centavos"
+}

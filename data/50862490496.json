@@ -1,0 +1,84 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Veículo Volkswagen Gol 1.0 2023/2024",
+					"placa":	"DEF-2G34",
+					"renavam":	"23456789012"
+				}, {
+					"descricao_bem":	"Veículo Chevrolet Onix 1.4 2022/2023",
+					"placa":	"GHI-3H45",
+					"renavam":	"34567890123"
+				}],
+			"cep":	"01310-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"50862490496",
+			"data_emissao":	1685577600,
+			"email_devedor":	"maria.oliveira@email.com.br",
+			"endereco_devedor":	"Avenida Paulista, 1000, Conjunto 302",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2024-123456",
+			"parcela_final":	1798761600,
+			"parcela_inicial":	1688169600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 8.420,50",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 65.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Toyota Corolla 2.0 2023/2024",
+					"placa":	"JKL-4I56",
+					"renavam":	"45678901234"
+				}],
+			"cep":	"01426-001",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"12345678901",
+			"data_emissao":	1690848000,
+			"email_devedor":	"carlos.pereira@email.com.br",
+			"endereco_devedor":	"Rua Oscar Freire, 500, Apto 801",
+			"nome_devedor":	"Carlos Eduardo Pereira",
+			"numero_contrato":	"CTR-2024-654321",
+			"parcela_final":	1817164800,
+			"parcela_inicial":	1693526400,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 7.890,25",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 78.500,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Honda Civic 1.5 2023/2024",
+					"placa":	"MNO-5J67",
+					"renavam":	"56789012345"
+				}, {
+					"descricao_bem":	"Veículo Hyundai HB20 1.0 2022/2023",
+					"placa":	"PQR-6K78",
+					"renavam":	"67890123456"
+				}, {
+					"descricao_bem":	"Veículo Ford Ranger 3.2 2023/2024",
+					"placa":	"STU-7L89",
+					"renavam":	"78901234567"
+				}],
+			"cep":	"01418-200",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"87654321098",
+			"data_emissao":	1696118400,
+			"email_devedor":	"ana.rodrigues@email.com.br",
+			"endereco_devedor":	"Alameda Santos, 2000, Conjunto 1501",
+			"nome_devedor":	"Ana Paula Rodrigues",
+			"numero_contrato":	"CTR-2024-987654",
+			"parcela_final":	1835568000,
+			"parcela_inicial":	1698796800,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 7.229,40",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 82.300,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 23.540,15",
+	"total_a_pagar_extenso":	"vinte e três mil, quinhentos e quarenta reais e quinze centavos",
+	"total_em_atraso":	"R$ 23.540,15",
+	"total_em_atraso_extenso":	"vinte e três mil, quinhentos e quarenta reais e quinze centavos",
+	"valor_causa":	"R$ 92.750,60",
+	"valor_causa_extenso":	"noventa e dois mil, setecentos e cinquenta reais e sessenta centavos"
+}

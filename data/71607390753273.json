@@ -1,0 +1,88 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540 6x4",
+					"placa":	"ABC-9D34",
+					"renavam":	"78912345602"
+				}, {
+					"descricao_bem":	"Van Mercedes-Benz Sprinter 319",
+					"placa":	"XYZ-2F89",
+					"renavam":	"32165498703"
+				}],
+			"cep":	"04538-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"71607390753273",
+			"data_emissao":	1640995200,
+			"email_devedor":	"contato@transportadoraxyz.com.br",
+			"endereco_devedor":	"Avenida Industrial, 1500, Galpão 3",
+			"nome_devedor":	"Transportadora XYZ S.A.",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1809216000,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 45.780,20",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Carro Toyota Corolla XEi 2.0",
+					"placa":	"MNO-7H12",
+					"renavam":	"65498732104"
+				}, {
+					"descricao_bem":	"Moto Honda CB 500F",
+					"placa":	"PQR-3K56",
+					"renavam":	"98732165405"
+				}, {
+					"descricao_bem":	"SUV Jeep Compass Limited 4x4",
+					"placa":	"STU-8L90",
+					"renavam":	"12378945606"
+				}],
+			"cep":	"30130-010",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000187",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@locadorarapido.com.br",
+			"endereco_devedor":	"Rua das Flores, 450, Loja 12",
+			"nome_devedor":	"Locadora de Veículos Rápido Ltda",
+			"numero_contrato":	"CTR-2023-789012",
+			"parcela_final":	1783209600,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 38.920,55",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 195.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Caminhão Scania R450 6x2",
+					"placa":	"VWX-1M23",
+					"renavam":	"45612378907"
+				}, {
+					"descricao_bem":	"Carreta Bitrem para Transporte de Cargas",
+					"placa":	"YZA-4N45",
+					"renavam":	"78945612308"
+				}],
+			"cep":	"90200-000",
+			"comarca":	"Porto Alegre",
+			"cpf_cnpj_devedor":	"32198765000123",
+			"data_emissao":	1625097600,
+			"email_devedor":	"cobranca@logisticaexpressa.com.br",
+			"endereco_devedor":	"Rodovia BR-101, Km 25, S/N",
+			"nome_devedor":	"Empresa de Logística Expressa EIRELI",
+			"numero_contrato":	"CTR-2021-345678",
+			"parcela_final":	1851379200,
+			"parcela_inicial":	1627776000,
+			"quantidade_parcelas":	84,
+			"total_em_atraso_contrato":	"R$ 38.750,00",
+			"uf":	"RS",
+			"valor_contrato":	"R$ 420.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 123.450,75",
+	"total_a_pagar_extenso":	"cento e vinte e três mil, quatrocentos e cinquenta reais e setenta e cinco centavos",
+	"total_em_atraso":	"R$ 123.450,75",
+	"total_em_atraso_extenso":	"cento e vinte e três mil, quatrocentos e cinquenta reais e setenta e cinco centavos",
+	"valor_causa":	"R$ 587.920,30",
+	"valor_causa_extenso":	"quinhentos e oitenta e sete mil, novecentos e vinte reais e trinta centavos"
+}

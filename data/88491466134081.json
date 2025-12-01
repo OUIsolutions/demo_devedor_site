@@ -1,0 +1,84 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540 6x2",
+					"placa":	"ABC-1D23",
+					"renavam":	"12345678901"
+				}, {
+					"descricao_bem":	"Van Mercedes-Benz Sprinter 416",
+					"placa":	"XYZ-9F87",
+					"renavam":	"98765432109"
+				}],
+			"cep":	"04538-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"88491466134081",
+			"data_emissao":	1640995200,
+			"email_devedor":	"contato@transportesrapido.com.br",
+			"endereco_devedor":	"Avenida Industrial, 1234, Galpão 5",
+			"nome_devedor":	"Transportes Rápido Ltda",
+			"numero_contrato":	"CTR-2022-123456",
+			"parcela_final":	1783209600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 45.320,50",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Carreta Scania R450 6x2",
+					"placa":	"MNO-5P67",
+					"renavam":	"55566677788"
+				}],
+			"cep":	"30130-001",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"11223344000155",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@logisticaexpressa.com.br",
+			"endereco_devedor":	"Rua Logística, 567, Andar 3",
+			"nome_devedor":	"Logística Expressa S.A.",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1704067200,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 38.750,30",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 185.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Ônibus Marcopolo Paradiso 1800",
+					"placa":	"QRS-8T90",
+					"renavam":	"33322211100"
+				}, {
+					"descricao_bem":	"Caminhão Ford Cargo 2429",
+					"placa":	"UVW-3X45",
+					"renavam":	"44455566677"
+				}, {
+					"descricao_bem":	"Pick-up Toyota Hilux SRV",
+					"placa":	"YZA-2B34",
+					"renavam":	"66677788899"
+				}],
+			"cep":	"90200-000",
+			"comarca":	"Porto Alegre",
+			"cpf_cnpj_devedor":	"99887766000133",
+			"data_emissao":	1625097600,
+			"email_devedor":	"cobranca@frotasmodernas.com.br",
+			"endereco_devedor":	"Rodovia BR-101, Km 25, S/N",
+			"nome_devedor":	"Frotas Modernas EIRELI",
+			"numero_contrato":	"CTR-2021-789012",
+			"parcela_final":	1767139200,
+			"parcela_inicial":	1627776000,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 31.709,40",
+			"uf":	"RS",
+			"valor_contrato":	"R$ 320.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 115.780,20",
+	"total_a_pagar_extenso":	"cento e quinze mil, setecentos e oitenta reais e vinte centavos",
+	"total_em_atraso":	"R$ 115.780,20",
+	"total_em_atraso_extenso":	"cento e quinze mil, setecentos e oitenta reais e vinte centavos",
+	"valor_causa":	"R$ 412.350,75",
+	"valor_causa_extenso":	"quatrocentos e doze mil, trezentos e cinquenta reais e setenta e cinco centavos"
+}

@@ -1,0 +1,84 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Caminhão Volvo FH 540 6x4",
+					"placa":	"ABC-1D23",
+					"renavam":	"78901234567"
+				}, {
+					"descricao_bem":	"Van Mercedes-Benz Sprinter 416 CDI",
+					"placa":	"XYZ-9F45",
+					"renavam":	"89012345678"
+				}],
+			"cep":	"04538-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"06647240132513",
+			"data_emissao":	1640995200,
+			"email_devedor":	"contas@transportadoraexpresso.com.br",
+			"endereco_devedor":	"Avenida Industrial, 1500, Galpão 3",
+			"nome_devedor":	"Transportadora Expresso Norte S.A.",
+			"numero_contrato":	"CTR-2022-112233",
+			"parcela_final":	1767225600,
+			"parcela_inicial":	1643673600,
+			"quantidade_parcelas":	48,
+			"total_em_atraso_contrato":	"R$ 45.780,25",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 280.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Carro Executivo BMW 530i 2022",
+					"placa":	"MNO-2P34",
+					"renavam":	"90123456789"
+				}, {
+					"descricao_bem":	"SUV Audi Q5 45 TFSI 2023",
+					"placa":	"PQR-5S67",
+					"renavam":	"01234567890"
+				}, {
+					"descricao_bem":	"Pick-up Toyota Hilux SRV 4x4",
+					"placa":	"STU-8V90",
+					"renavam":	"12345678901"
+				}],
+			"cep":	"30130-001",
+			"comarca":	"Belo Horizonte",
+			"cpf_cnpj_devedor":	"45678912000134",
+			"data_emissao":	1672531200,
+			"email_devedor":	"financeiro@locadorapremium.com.br",
+			"endereco_devedor":	"Rua das Flores, 250, Loja 10",
+			"nome_devedor":	"Locadora de Veículos Premium Ltda.",
+			"numero_contrato":	"CTR-2023-445566",
+			"parcela_final":	1706659200,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 38.920,50",
+			"uf":	"MG",
+			"valor_contrato":	"R$ 195.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Caminhão Scania R450 6x2",
+					"placa":	"VWX-3Y45",
+					"renavam":	"23456789012"
+				}],
+			"cep":	"90200-000",
+			"comarca":	"Porto Alegre",
+			"cpf_cnpj_devedor":	"23456789000156",
+			"data_emissao":	1625097600,
+			"email_devedor":	"cobranca@frotalogistica.com.br",
+			"endereco_devedor":	"Rodovia BR-101, Km 85, S/N",
+			"nome_devedor":	"Frota Logística Rápida EIRELI",
+			"numero_contrato":	"CTR-2021-778899",
+			"parcela_final":	1767225600,
+			"parcela_inicial":	1627776000,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 38.750,00",
+			"uf":	"RS",
+			"valor_contrato":	"R$ 320.000,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 123.450,75",
+	"total_a_pagar_extenso":	"cento e vinte e três mil, quatrocentos e cinquenta reais e setenta e cinco centavos",
+	"total_em_atraso":	"R$ 123.450,75",
+	"total_em_atraso_extenso":	"cento e vinte e três mil, quatrocentos e cinquenta reais e setenta e cinco centavos",
+	"valor_causa":	"R$ 587.320,90",
+	"valor_causa_extenso":	"quinhentos e oitenta e sete mil, trezentos e vinte reais e noventa centavos"
+}

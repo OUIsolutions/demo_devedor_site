@@ -1,0 +1,64 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Veículo Volkswagen Gol 1.0 2023/2024",
+					"placa":	"XYZ-9A87",
+					"renavam":	"98765432109"
+				}, {
+					"descricao_bem":	"Veículo Chevrolet Onix Plus 1.0 Turbo 2022/2023",
+					"placa":	"DEF-5G67",
+					"renavam":	"45678901234"
+				}],
+			"cep":	"01310-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"46229602268",
+			"data_emissao":	1685577600,
+			"email_devedor":	"maria.costa@email.com.br",
+			"endereco_devedor":	"Avenida Paulista, 1000, Conjunto 1201",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2024-123456",
+			"parcela_final":	1798761600,
+			"parcela_inicial":	1688169600,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 8.450,25",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 65.000,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Toyota Corolla 2.0 XEi 2021/2022",
+					"placa":	"GHI-2J34",
+					"renavam":	"23456789012"
+				}, {
+					"descricao_bem":	"Veículo Honda Civic Touring 1.5 Turbo 2023/2024",
+					"placa":	"JKL-3M45",
+					"renavam":	"34567890123"
+				}, {
+					"descricao_bem":	"Veículo Ford Ranger XLT 3.2 Diesel 2022/2023",
+					"placa":	"MNO-6P78",
+					"renavam":	"56789012345"
+				}],
+			"cep":	"80020-310",
+			"comarca":	"Curitiba",
+			"cpf_cnpj_devedor":	"12345678900",
+			"data_emissao":	1672531200,
+			"email_devedor":	"carlos.pereira@email.com.br",
+			"endereco_devedor":	"Rua XV de Novembro, 500, Sala 301",
+			"nome_devedor":	"Carlos Eduardo Pereira",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1822492800,
+			"parcela_inicial":	1675209600,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 7.470,20",
+			"uf":	"PR",
+			"valor_contrato":	"R$ 78.500,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 15.920,45",
+	"total_a_pagar_extenso":	"quinze mil, novecentos e vinte reais e quarenta e cinco centavos",
+	"total_em_atraso":	"R$ 15.920,45",
+	"total_em_atraso_extenso":	"quinze mil, novecentos e vinte reais e quarenta e cinco centavos",
+	"valor_causa":	"R$ 92.750,80",
+	"valor_causa_extenso":	"noventa e dois mil, setecentos e cinquenta reais e oitenta centavos"
+}
