@@ -1,0 +1,56 @@
+{
+	"contratos":	[{
+			"bens":	[{
+					"descricao_bem":	"Veículo Volkswagen Gol 1.0 2021/2022",
+					"placa":	"DEF-2E34",
+					"renavam":	"23456789012"
+				}, {
+					"descricao_bem":	"Veículo Chevrolet Onix 1.4 2023/2023",
+					"placa":	"GHI-3F45",
+					"renavam":	"34567890123"
+				}],
+			"cep":	"01310-100",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"91173519869",
+			"data_emissao":	1677628800,
+			"email_devedor":	"maria.costa@email.com.br",
+			"endereco_devedor":	"Avenida Paulista, 1000, Conjunto 301",
+			"nome_devedor":	"Maria Oliveira Costa",
+			"numero_contrato":	"CTR-2023-654321",
+			"parcela_final":	1811894400,
+			"parcela_inicial":	1680307200,
+			"quantidade_parcelas":	60,
+			"total_em_atraso_contrato":	"R$ 8.450,20",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 92.500,00"
+		}, {
+			"bens":	[{
+					"descricao_bem":	"Veículo Ford Ka 1.5 2022/2023",
+					"placa":	"JKL-4G56",
+					"renavam":	"45678901234"
+				}],
+			"cep":	"01304-000",
+			"comarca":	"São Paulo",
+			"cpf_cnpj_devedor":	"12345678901",
+			"data_emissao":	1675209600,
+			"email_devedor":	"carlos.pereira@email.com.br",
+			"endereco_devedor":	"Rua Augusta, 500, Sala 201",
+			"nome_devedor":	"Carlos Eduardo Pereira",
+			"numero_contrato":	"CTR-2023-987654",
+			"parcela_final":	1775347200,
+			"parcela_inicial":	1677888000,
+			"quantidade_parcelas":	36,
+			"total_em_atraso_contrato":	"R$ 7.470,20",
+			"uf":	"SP",
+			"valor_contrato":	"R$ 78.300,00"
+		}],
+	"data_atual":	1731196800,
+	"data_calculo":	1704067200,
+	"notificacao_valida":	true,
+	"total_a_pagar":	"R$ 15.920,40",
+	"total_a_pagar_extenso":	"quinze mil, novecentos e vinte reais e quarenta centavos",
+	"total_em_atraso":	"R$ 15.920,40",
+	"total_em_atraso_extenso":	"quinze mil, novecentos e vinte reais e quarenta centavos",
+	"valor_causa":	"R$ 72.580,15",
+	"valor_causa_extenso":	"setenta e dois mil, quinhentos e oitenta reais e quinze centavos"
+}
